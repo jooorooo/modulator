@@ -2,21 +2,21 @@
 
 namespace Simexis\Modulator\Database\Migrations;
 
-use Simexis\Modulator\Modulator\Module;
+use Simexis\Modulator\Modules\Module;
 use Illuminate\Database\Migrations\MigrationCreator AS BaseMigrationCreator;
 
 class MigrationCreator extends BaseMigrationCreator
 {
 	
     /**
-     * @var \Simexis\Modulator\Modulator\Module|null
+     * @var \Simexis\Modulator\Modules\Module|null
      */
     protected $module;
 
 	/**
      * Set module.
      *
-     * @param  \Simexis\Modulator\Modulator\Module  $module
+     * @param  \Simexis\Modulator\Modules\Module  $module
      * @return \Simexis\Modulator\Database\Migrations\MigrationCreator
      */
 	public function setModule(Module $module) {

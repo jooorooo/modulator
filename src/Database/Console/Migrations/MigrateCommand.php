@@ -11,7 +11,7 @@ use Illuminate\Database\Console\Migrations\MigrateCommand AS BaseMigrateCommand;
 class MigrateCommand extends BaseMigrateCommand
 {
     /**
-     * @var \Simexis\Modulator\Modulator\Modules
+     * @var \Simexis\Modulator\Modules\Modules
      */
     protected $module;
 	
@@ -56,7 +56,7 @@ class MigrateCommand extends BaseMigrateCommand
      * Get module.
      *
      * @param  string  $name
-     * @return \Simexis\Modulator\Modulator\Module|null
+     * @return \Simexis\Modulator\Modules\Module|null
      */
     protected function getModule($name)
     {

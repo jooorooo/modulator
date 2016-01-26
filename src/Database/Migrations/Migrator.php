@@ -3,7 +3,7 @@
 namespace Simexis\Modulator\Database\Migrations;
 
 use Illuminate\Support\Str;
-use Simexis\Modulator\Modulator\Module;
+use Simexis\Modulator\Modules\Module;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Database\Migrations\Migrator AS BaseMigrator;
 use Illuminate\Database\ConnectionResolverInterface as Resolver;
@@ -11,14 +11,14 @@ use Illuminate\Database\ConnectionResolverInterface as Resolver;
 class Migrator extends BaseMigrator
 {
     /**
-     * @var \Simexis\Modulator\Modulator\Module|null
+     * @var \Simexis\Modulator\Modules\Module|null
      */
     protected $module;
 
 	/**
      * Set module.
      *
-     * @param  Simexis\Modulator\Modulator\Module  $module
+     * @param  Simexis\Modulator\Modules\Module  $module
      * @return \Simexis\Modulator\Database\Migrations\Migrator;
      */
 	public function setModule(Module $module) {

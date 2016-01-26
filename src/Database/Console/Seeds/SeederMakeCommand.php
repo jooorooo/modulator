@@ -11,7 +11,7 @@ use Illuminate\Database\Console\Seeds\SeederMakeCommand AS BaseSeederMakeCommand
 class SeederMakeCommand extends BaseSeederMakeCommand
 {
     /**
-     * @var \Simexis\Modulator\Modulator\Module|null
+     * @var \Simexis\Modulator\Modules\Module|null
      */
     protected $module;
 
@@ -35,7 +35,7 @@ class SeederMakeCommand extends BaseSeederMakeCommand
     /**
      * Generate DatabaseSeeder if not exists.
      *
-     * @return \Simexis\Modulator\Modulator\Module|null
+     * @return \Simexis\Modulator\Modules\Module|null
      */
     protected function checkBaseSeeder()
     {
@@ -60,7 +60,7 @@ class SeederMakeCommand extends BaseSeederMakeCommand
      * Get module.
      *
      * @param  string  $name
-     * @return \Simexis\Modulator\Modulator\Module|null
+     * @return \Simexis\Modulator\Modules\Module|null
      */
     protected function getModule($name)
     {

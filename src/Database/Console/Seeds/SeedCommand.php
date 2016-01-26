@@ -10,7 +10,7 @@ use Illuminate\Database\Console\Seeds\SeedCommand AS BaseSeedCommand;
 class SeedCommand extends BaseSeedCommand
 {
     /**
-     * @var \Simexis\Modulator\Modulator\Modules
+     * @var \Simexis\Modulator\Modules\Modules
      */
     protected $module;
 
