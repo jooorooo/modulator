@@ -98,6 +98,9 @@ class MigrateCommand extends BaseMigrateCommand
 		if($module)
 			$this->migrator->setModule($module);
 		
+		if(version_compare(app()->version(), '5.2', '>='))
+			$pretend = $this->input->getOptions();
+		
         $this->migrator->run($path, $pretend);
 
         // Once the migrator has run we will grab the note output and send it out to
